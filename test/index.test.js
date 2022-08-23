@@ -52,6 +52,7 @@ describe('Dates module', () => {
 
   test("Return today's date in the format: May 29, 2019", () => {
     const cal = dates.calendar();
+    // * This test is looking for a 3 digit month.
     expect(cal).toMatch(/^[A-z]{3} [0-9]{2}, [0-9]{4}$/);
   });
 
